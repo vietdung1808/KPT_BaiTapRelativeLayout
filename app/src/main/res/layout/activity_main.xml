@@ -4,111 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center_vertical">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="100dp"
-        android:height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:background="#f00"
         android:gravity="center"
-        android:text="1"
+        android:text="Top Content Here"
         android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#009688"
+            android:gravity="center"
+            android:text="First"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/textViewFirst"
+            android:background="#2196F3"
+            android:gravity="center"
+            android:text="Second"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textViewThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textViewSecond"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:text="Three"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView1"
-        android:layout_toRightOf="@id/textView1"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#E91E63"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#009688"
         android:gravity="center"
-        android:text="2"
+        android:text="Bottom Content Here"
         android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView2"
-        android:layout_toRightOf="@id/textView2"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#9C27B0"
-        android:gravity="center"
-        android:text="3"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
-        android:layout_toRightOf="@id/textView3"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#8BC34A"
-        android:gravity="center"
-        android:text="4"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView4"
-        android:layout_toLeftOf="@id/textView4"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#FF9800"
-        android:gravity="center"
-        android:text="5"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView5"
-        android:layout_toLeftOf="@id/textView5"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#03A9F4"
-        android:gravity="center"
-        android:text="6"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView6"
-        android:layout_toLeftOf="@id/textView6"
-        android:width="100dp"
-        android:height="60dp"
-        android:background="#374B53"
-        android:gravity="center"
-        android:text="7"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
